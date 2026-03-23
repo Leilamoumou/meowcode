@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
-import LeetCode from './pages/LeetCode'
-import Algorithms from './pages/Algorithms'
-import FormalMethods from './pages/FormalMethods'
-import Networking from './pages/Networking'
+import Home from '../../src/pages/Home'
+import LeetCode from '../../src/pages/LeetCode'
+import Algorithms from '../../src/pages/Algorithms'
+import FormalMethods from '../../src/pages/FormalMethods'
+import Networking from '../../src/pages/Networking'
 
 function App() {
   return (
