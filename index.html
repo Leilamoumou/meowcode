@@ -2,13 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/meowcode/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>meowcode</title>
-    <script type="module" crossorigin src="/meowcode/assets/index-ClpTS8Kb.js"></script>
-    <link rel="stylesheet" crossorigin href="/meowcode/assets/index-CHlNkVsF.css">
+    <img src="icon.png"/>
+    <title> MeowCode </title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
+    <!-- Navigation Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <div class="logo">
+            <h1><a href="index.html">MeowCode/a></h1>
+
+          </div>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+           <nav class="main-nav">
+         <a href="#leetcode" class="btn">LeetCode</a>
+            <a href="#leetcode" class="btn">Algorithms</a>
+            <a href="#leetcode" class="btn">Formal Methods && Logic</a>
+            <a href="#leetcode" class="btn">Networking</a>
+
+            <button class="btn theme-toggle" id="themeToggle" aria-label="Toggle Dark Mode">
+              <img src="dark-mode.png" id="themeIcon" alt="Dark Mode Icon" width="30" height="30">
+            </button>
+
   </body>
 </html>
