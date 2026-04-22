@@ -193,7 +193,30 @@ function PostList({ posts, activeId, onSelect }) {
       </main>
     );
   }
+ return (
+    <main style={styles.main}>
+      <div style={styles.postHeader}>
+        <div style={styles.postNum}>{post.number}</div>
+        <h1 style={styles.postH1}>{post.title}</h1>
+        <div style={styles.postMeta}>
+          <span style={styles.tag(post.difficulty)}>{post.difficulty}</span>
+          {post.topics.map((t) => (
+            <span key={t} style={styles.tag(null)}>{t}</span>
+          ))}
+        </div>
+      </div>
  
+      {post.sections.map((section, i) => (
+        <div key={i}>
+          <h3 style={styles.sectionHeading}>{section.heading}</h3>
+          {section.isCode
+            ? <pre style={styles.pre}>{"code solution"}</pre>
+            : <div style={styles.placeholder}>{section.content}</div>
+          }
+        </div>
+      ))}
+    </main>
+  );
  }
 //end && export
 
@@ -205,7 +228,7 @@ export default function LeetCode() {
       <header style={styles.header}>
         <span style={{ fontSize: "1.3rem" }}>🐱</span>
         <div style={styles.logo}>
-          meow<span style={styles.logoAccent}>code</span>
+        Leet<span style={styles.logoAccent}>Code</span>
         </div>
         <div style={styles.tagline}>LeetCode Problems Explained</div>
       </header>
